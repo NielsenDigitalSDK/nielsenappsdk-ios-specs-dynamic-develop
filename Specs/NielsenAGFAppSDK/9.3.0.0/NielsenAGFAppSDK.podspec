@@ -13,12 +13,4 @@ Pod::Spec.new do |s|
     s.summary             = 'Nielsen AGF App SDK.'
     s.vendored_frameworks = 'NielsenAppApi.framework'
     s.version             = '9.3.0.0'
-    s.script_phases = [
-        {
-            :name => 'Pod Build Script',
-            :script => 'chmod a+x "${PODS_TARGET_SRCROOT}/pod_build.sh"
-"${PODS_TARGET_SRCROOT}"/pod_build.sh',
-            :execution_position => :before_compile
-        }
-    ]
 end
